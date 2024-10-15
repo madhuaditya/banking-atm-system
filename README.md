@@ -7,7 +7,6 @@
 - [Database Structure](#database-structure)
 - [Setup Instructions](#setup-instructions)
 - [How to Use](#how-to-use)
-- [Contributing](#contributing)
 
 
 ## Overview
@@ -63,3 +62,74 @@ CREATE TABLE Accounts (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES Users(user_id) ON DELETE CASCADE
 );
+
+
+```
+## Setup Instructions
+
+### Prerequisites
+Before you begin, ensure you have the following installed on your machine:
+
+- **Java** (version 8 or higher): [Download Java](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- **MySQL** (version 5.7 or higher): [Download MySQL](https://dev.mysql.com/downloads/mysql/)
+- **JDBC Driver** for MySQL: [Download MySQL Connector/J](https://dev.mysql.com/downloads/connector/j/)
+- An Integrated Development Environment (IDE) such as **IntelliJ IDEA** or **Eclipse**.
+
+### Steps to Run the Project
+
+1. **Clone the Repository**:
+   Open your terminal or command prompt and run the following command to clone the project repository to your local machine:
+
+   ```bash
+   git clone https://github.com/yourusername/banking-atm-system.git
+   cd banking-atm-system
+   ```
+2. To set up the MySQL database for the Banking and ATM System, follow the steps below:
+
+### Prerequisites
+- Ensure that you have **MySQL Server** installed on your machine. If not, download it from [MySQL Downloads](https://dev.mysql.com/downloads/mysql/).
+
+### Steps to Create the Database and Tables
+
+1. **Open MySQL Command Line Client**:
+   - You can use the MySQL Command Line Client, MySQL Workbench, or any other MySQL client tool you prefer.
+
+2. **Log in to MySQL**:
+   - Enter your MySQL username and password. The default username is usually `root`. For example:
+
+   ```bash
+   mysql -u root -p
+   ```
+3. Copy data from 'bank-schama.sql'
+4. run code.
+
+### **Summary**:
+This section provides clear instructions for setting up MySQL for your project, including commands for creating the database and tables. Make sure to customize it if you have any specific setup requirements!
+
+## How to Use the Code
+
+To effectively use the Banking and ATM System project, follow the steps below:
+
+### 1. Clone the Repository
+Open your terminal or command prompt and run the following command to clone the project repository (replace `yourusername` with your GitHub username):
+
+```bash
+git clone https://github.com/yourusername/banking-atm-system.git
+
+```
+   Open Connections.java file and replace `username` with your mysql username and `password` with your mysql password
+   
+### 2. Next step
+```bash
+cd banking-atm-system.git
+cd src
+javac Main
+java Main
+```
+
+
+
+
+
+
+
