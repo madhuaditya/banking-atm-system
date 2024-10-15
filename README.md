@@ -122,6 +122,7 @@ git clone https://github.com/yourusername/banking-atm-system.git
 ### 2. Next step
 ```bash
 cd banking-atm-system.git
+cd Java-SQL
 cd src
 javac Main
 java Main
